@@ -1,0 +1,22 @@
+export const books = [
+  { name: "To Kill a Mockingbird", author: "Harper Lee" },
+  { name: "1984", author: "George Orwell" },
+  { name: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+  { name: "Pride and Prejudice", author: "Jane Austen" },
+  { name: "The Catcher in the Rye", author: "J.D. Salinger" },
+  { name: "Moby-Dick", author: "Herman Melville" },
+  { name: "The Lord of the Rings", author: "J.R.R. Tolkien" },
+  { name: "Jane Eyre", author: "Charlotte Bronte" },
+  { name: "Animal Farm", author: "George Orwell" },
+  { name: "The Odyssey", author: "Homer" },
+  { name: "Brave New World", author: "Aldous Huxley" },
+  { name: "The Chronicles of Narnia", author: "C.S. Lewis" },
+  { name: "The Hobbit", author: "J.R.R. Tolkien" },
+  { name: "Fahrenheit 451", author: "Ray Bradbury" },
+  { name: "Gone with the Wind", author: "Margaret Mitchell" },
+  { name: "The Harry Potter series", author: "J.K. Rowling" },
+  { name: "To Kill a Mockingbird", author: "Harper Lee" },
+  { name: "The Alchemist", author: "Paulo Coelho" },
+  { name: "The Little Prince", author: "Antoine de Saint-Exupéry" },
+  { name: "The Kite Runner", author: "Khaled Hosseini" }
+];

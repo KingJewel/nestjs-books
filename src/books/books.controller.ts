@@ -5,15 +5,13 @@ import {
   Param, 
   Post, 
   Body, 
-  HttpCode,
-  HttpStatus,
-  Res,
   Put,
   Delete,
   Query
 } from '@nestjs/common';
 import { CreateBookDto } from './dto/create-book.dto/create-book.dto';
 import { UpdateBookDto } from './dto/update-book.dto/update-book.dto';
+import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto/pagination-query.dto';
 
 @Controller('books')
 export class BooksController {
@@ -21,13 +19,10 @@ export class BooksController {
   constructor( private readonly booksService: BooksService ) {}
 
   @Get()
-  findAll(@Query() querySelector) {
-
-    let { limit = 5, current_page = 1 } = querySelector;
+  findAll(@Query() paginationQueryDto: PaginationQueryDto) {
     
-    const the_books = this.booksService.findAll(limit, limit * (current_page - 1));
+    return this.booksService.findAll(paginationQueryDto);
 
-    return the_books;
   }
 
   @Get(':id')
